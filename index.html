@@ -15,6 +15,7 @@
   </head>
   <body class="preload">
     <div id="page">
+      
       <nav>
         <a href="#intro"><img src="images/logo.png" alt="Keenan Kua" class="logo" ></a>
         <ul class="nav-links">
@@ -29,6 +30,7 @@
           <div class="line3"></div>
         </div>
       </nav>
+
       <div id="intro-page">
         <section id="intro">
           <div class="container">
@@ -72,7 +74,7 @@
                 <div class="proj-desc-info">
                   <h3 class="proj-item-title">FindATutor</h3>
                   <p>A web application that allows students and tutors to connect.</p>
-                  <a href="" class="button button-accent button-small proj-item-button">Check it out on Github</a>
+                  <a href="https://github.com/keenankua/FindATutor" class="button button-accent button-small proj-item-button">Check it out on Github</a>
                 </div>
               </figcaption>
             </figure>
@@ -84,7 +86,7 @@
                   <div class="proj-desc-info">
                     <h3 class="proj-item-title">EyegazeAuth</h3>
                     <p>An authentication proof of concept application that allows a user to input a graphical password using their eyes.</p>
-                    <a href="" class="button button-accent button-small proj-item-button">Check it out on Github</a>
+                    <a href="https://github.com/Moulik21/eyegazeauth" class="button button-accent button-small proj-item-button">Check it out on Github</a>
                   </div>
               </figcaption>
             </figure>
@@ -96,7 +98,7 @@
                 <div class="proj-desc-info">
                   <h3 class="proj-item-title">Fornite2D</h3>
                   <p>A multiplayer 2D browser shooting game.</p>
-                  <a href="" class="button button-accent button-small proj-item-button">Check it out on Github</a>
+                  <a href="https://github.com/keenankua/Fortnite2D" class="button button-accent button-small proj-item-button">Check it out on Github</a>
                 </div>
               </figcaption>
             </figure>
@@ -108,7 +110,7 @@
                 <div class="proj-desc-info">
                   <h3 class="proj-item-title">Paint</h3>
                   <p>A drawing application inspired by Microsoft Paint.</p>
-                  <a href="" class="button button-accent button-small proj-item-button">Check it out on Github</a>
+                  <a href="https://github.com/keenankua/Paint" class="button button-accent button-small proj-item-button">Check it out on Github</a>
                 </div>
               </figcaption>
             </figure>
@@ -120,7 +122,7 @@
                 <div class="proj-desc-info">
                   <h3 class="proj-item-title">Rogue</h3>
                   <p>A 2D dungeon crawling game that can be played in a terminal window.</p>
-                  <a href="" class="button button-accent button-small proj-item-button">Check it out on Github</a>
+                  <a href="https://github.com/keenankua/Rogue" class="button button-accent button-small proj-item-button">Check it out on Github</a>
                 </div>
               </figcaption>
             </figure>
@@ -142,6 +144,7 @@
     </div>
 
     <script>
+      // Dynamic age
       var BIRTHDATE = moment('06/02/1997','DD/MM/YYYY');
       $( document ).ready(function() {
         $('.age').text(calcAge);
@@ -187,6 +190,7 @@
       }
       navSlide();
 
+      // Debounce for scroll function
       const debounce = (func, delay) => {
           let debounceTimer
           return function() {
@@ -197,29 +201,6 @@
                   = setTimeout(() => func.apply(context, args), delay)
           }
       }
-
-
-      // $('html, body').bind('scroll mousedown wheel DOMMouseScroll mousewheel keyup', debounce(function(evt) {
-      //   console.log(evt.type);
-      //   console.log(document.documentElement.dataset.scroll, " and ", window.scrollY);
-      //   // detect user initiated scrolls
-      //   if (evt.type === 'DOMMouseScroll' || evt.type === 'keyup' || evt.type === 'mousewheel' || evt.type === 'wheel') {
-      //     if (evt.originalEvent.detail < 0 || (evt.originalEvent.wheelDelta && evt.originalEvent.wheelDelta > 0)) {
-      //       console.log("UP");
-      //     }
-      //     else if (evt.originalEvent.detail > 0 || (evt.originalEvent.wheelDelta && evt.originalEvent.wheelDelta < 0)) {
-      //       console.log("DOPWN");
-      //       // Was on the hero and scrolled down, so jump to about section
-      //       console.log(document.documentElement.dataset.scroll, " and ", window.scrollY);
-      //       if (document.documentElement.dataset.scroll == 0) {
-      //         about.scrollIntoView(true);
-      //       }
-      //     }
-      //   }
-      //   console.log("SCROLL IS: ", window.scrollY);
-      //   document.documentElement.dataset.scroll = window.scrollY;
-      // }, 100));
-
 
       // Intro page scroll handling
       var anchor = "";
