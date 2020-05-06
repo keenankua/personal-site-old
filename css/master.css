@@ -632,6 +632,10 @@ html:not([data-scroll='0']) .nav-links {
   margin: 0em;
 }
 
+.proj-item-button {
+  font-weight: bold;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
