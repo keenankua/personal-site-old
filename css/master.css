@@ -60,7 +60,15 @@ section::before {
   pointer-events: none;
 }
 
-.section-heading {
+h1 {
+  font-family: "Lexend Giga", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
   font-family: "Lexend Giga", sans-serif;
   font-size: 3rem;
   font-weight: 400;
@@ -68,14 +76,6 @@ section::before {
   margin-bottom: 0;
   line-height: 0.75;
   color: #333333;
-}
-
-h2 {
-  font-family: "Lexend Giga", sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 h3 {
@@ -139,18 +139,18 @@ img {
 }
 
 @media (min-width: 480px) {
-  .section-heading {
+  h2 {
     font-size: 4rem;
   }
 }
 
 @media (min-width: 768px) {
-  .section-heading {
-    font-size: 5rem;
+  h1 {
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   h3 {
@@ -492,7 +492,7 @@ html:not([data-scroll="0"]) .nav-links {
   z-index: 2;
 }
 
-.about-me-box .section-heading {
+.about-me-box h2 {
   color: #fff;
 }
 
@@ -539,7 +539,7 @@ html:not([data-scroll="0"]) .nav-links {
     opacity: 1;
   }
 
-  .about-me-box .section-heading {
+  .about-me-box h2 {
     color: #333333;
   }
 
