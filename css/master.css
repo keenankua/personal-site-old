@@ -1,18 +1,18 @@
 /* Fonts
 -----------------*/
 @font-face {
-  font-family: 'Huck';
-  src: url('../fonts/HUCK.woff2') format('woff2'),
-       url('../fonts/HUCK.woff') format('woff');
+  font-family: "Huck";
+  src: url("../fonts/HUCK.woff2") format("woff2"),
+    url("../fonts/HUCK.woff") format("woff");
 }
 
 /* General
 -----------------*/
 .preload * {
- -webkit-transition: none !important;
- -moz-transition: none !important;
- -ms-transition: none !important;
- -o-transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 .resize-transition-stopper * {
@@ -42,7 +42,7 @@
 
 body {
   margin: 0;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: 300;
 }
 
@@ -60,8 +60,8 @@ section::before {
   pointer-events: none;
 }
 
-h1 {
-  font-family: 'Lexend Giga', sans-serif;
+.section-heading {
+  font-family: "Lexend Giga", sans-serif;
   font-size: 3rem;
   font-weight: 400;
   margin-top: 0;
@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lexend Giga', sans-serif;
+  font-family: "Lexend Giga", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   margin-top: 0;
@@ -79,7 +79,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Lexend Giga', sans-serif;
+  font-family: "Lexend Giga", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   margin-top: 0;
@@ -100,7 +100,7 @@ img {
 }
 
 .accent {
-  color: #BE423F;
+  color: #be423f;
 }
 
 .container {
@@ -109,43 +109,43 @@ img {
 }
 
 .button {
-  font-family: 'Lexend Giga', sans-serif;
+  font-family: "Lexend Giga", sans-serif;
   display: inline-block;
   font-weight: bolder;
   text-decoration: none;
-  border-width: .125em;
-  border-radius: .1875em;
+  border-width: 0.125em;
+  border-radius: 0.1875em;
   border-style: solid;
-  padding: .5em 1.75em;
+  padding: 0.5em 1.75em;
 }
 
 .button-small {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .button-medium {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .button-accent {
-  color: #BE423F;
-  border-color: #BE423F;
+  color: #be423f;
+  border-color: #be423f;
 }
 
 .button-accent:hover,
 .button-accent:focus {
-  color: #FFF;
-  background: #BE423F;
+  color: #fff;
+  background: #be423f;
 }
 
 @media (min-width: 480px) {
-  h1 {
+  .section-heading {
     font-size: 4rem;
   }
 }
 
 @media (min-width: 768px) {
-  h1 {
+  .section-heading {
     font-size: 5rem;
   }
 
@@ -169,17 +169,16 @@ img {
   position: absolute;
   width: 100%;
   opacity: 0;
-  transition: opacity 1s .2s;
+  transition: opacity 1s 0.2s;
 }
 
-html:not([data-scroll='0']) #intro-page {
+html:not([data-scroll="0"]) #intro-page {
   transform: translate(0, -100%);
 }
 
-html:not([data-scroll='0']) #main {
+html:not([data-scroll="0"]) #main {
   opacity: 1;
 }
-
 
 /* Nav bar
 -----------------*/
@@ -191,17 +190,17 @@ nav {
   padding: 1rem;
   height: 4.25rem;
   z-index: 999;
-  font-family: 'Huck';
+  font-family: "Huck";
   font-size: 1rem;
   font-weight: 400;
-  transition: all 1s ease, background-color .2s .1s, font-size 0s;
+  transition: all 1s ease, background-color 0.2s 0.1s, font-size 0s;
 }
 
 .logo {
   height: 100%;
   width: auto;
   float: left;
-  transition: all 1s .2s;
+  transition: all 1s 0.2s;
 }
 
 .nav-links {
@@ -213,7 +212,7 @@ nav {
   text-align: right;
   opacity: 0;
   pointer-events: none;
-  transition: background-color 0s, opacity .25s;
+  transition: background-color 0s, opacity 0.25s;
 }
 
 .nav-active {
@@ -231,12 +230,12 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 nav a:hover,
 nav a:focus {
-    color: #BE423F;
+  color: #be423f;
 }
 
 .burger {
@@ -248,13 +247,13 @@ nav a:focus {
 .burger div {
   width: 1.5625rem;
   height: 0.1875rem;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   margin: 0.3125rem;
-  transition: background-color 1s .2s, transform 0.3s ease;
+  transition: background-color 1s 0.2s, transform 0.3s ease;
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-0.3125rem,0.375rem);
+  transform: rotate(-45deg) translate(-0.3125rem, 0.375rem);
 }
 
 .toggle .line2 {
@@ -262,22 +261,22 @@ nav a:focus {
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-0.3125rem,-0.375rem);
+  transform: rotate(45deg) translate(-0.3125rem, -0.375rem);
 }
 
-html:not([data-scroll='0']) nav {
-  transition: all .5s ease, background-color .2s .8s, font-size 0s;
+html:not([data-scroll="0"]) nav {
+  transition: all 0.5s ease, background-color 0.2s 0.8s, font-size 0s;
   position: fixed;
   top: 0;
   /* box-shadow: 0 0 1.5em rgba(255, 255, 255, .1); */
-  background-color: rgba(255,255,255,1);
-  font-family: 'Lexend Giga', sans-serif;
-  font-size: .8rem;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: "Lexend Giga", sans-serif;
+  font-size: 0.8rem;
 }
 
-html:not([data-scroll='0']) .nav-links {
-  transition: background-color 0s 1s, opacity .25s;
-  background-color: #FFF;
+html:not([data-scroll="0"]) .nav-links {
+  transition: background-color 0s 1s, opacity 0.25s;
+  background-color: #fff;
 }
 
 @media (min-width: 480px) {
@@ -298,7 +297,7 @@ html:not([data-scroll='0']) .nav-links {
 
   .nav-links li {
     float: right;
-    margin: .8em 2% .8em 2%;
+    margin: 0.8em 2% 0.8em 2%;
     padding: 0;
   }
 
@@ -309,7 +308,6 @@ html:not([data-scroll='0']) .nav-links {
   .burger {
     display: none;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -324,16 +322,15 @@ html:not([data-scroll='0']) .nav-links {
     transition: all 1s ease;
   }
 
-  html:not([data-scroll='0']) nav {
+  html:not([data-scroll="0"]) nav {
     padding: 1rem;
     height: 4.25rem;
   }
 
-  html:not([data-scroll='0']) .nav-links li {
-    margin: .9em 2% .8em 2%;
-    transition: all .5s ease;
+  html:not([data-scroll="0"]) .nav-links li {
+    margin: 0.9em 2% 0.8em 2%;
+    transition: all 0.5s ease;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -344,7 +341,7 @@ html:not([data-scroll='0']) .nav-links {
 
 @media (min-width: 1200px) {
   .nav-links a {
-    padding: .9em;
+    padding: 0.9em;
     margin: 1em;
   }
 }
@@ -352,8 +349,12 @@ html:not([data-scroll='0']) .nav-links {
 /* Intro
 -----------------*/
 #intro {
-  background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(0,0,0,0.3)),
-             url(../images/Intro-Background.jpg) no-repeat bottom;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/Intro-Background.jpg) no-repeat bottom;
   background-size: cover;
   background-position: center;
   padding: 40vh 0 0 0;
@@ -362,19 +363,19 @@ html:not([data-scroll='0']) .nav-links {
 }
 
 .title {
-  font-family: 'Huck';
+  font-family: "Huck";
   opacity: 0;
   animation: fade-in 1s ease-out forwards;
   -webkit-animation: fade-in 1s ease-out forwards;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .title-subtitle {
   display: block;
   opacity: 0;
-  animation: fade-in .8s ease-out forwards;
+  animation: fade-in 0.8s ease-out forwards;
   animation-delay: 1s;
-  -webkit-animation: fade-in .8s ease-out forwards;
+  -webkit-animation: fade-in 0.8s ease-out forwards;
   -webkit-animation-delay: 1s;
 }
 
@@ -385,12 +386,12 @@ html:not([data-scroll='0']) .nav-links {
   width: 46px;
   height: 46px;
   margin-left: -23px;
-  border: 1px solid rgba(255,255,255,0.75);
+  border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 100%;
   opacity: 0;
-  animation: fade-in .5s ease-out forwards;
+  animation: fade-in 0.5s ease-out forwards;
   animation-delay: 2.5s;
-  -webkit-animation: fade-in .5s ease-out forwards;
+  -webkit-animation: fade-in 0.5s ease-out forwards;
   -webkit-animation-delay: 2.5s;
 }
 
@@ -398,12 +399,12 @@ html:not([data-scroll='0']) .nav-links {
   position: absolute;
   top: 50%;
   left: 50%;
-  content: '';
+  content: "";
   width: 16px;
   height: 16px;
   margin: -12px 0 0 -8px;
-  border-left: 2px solid rgba(255,255,255,0.75);
-  border-bottom: 2px solid rgba(255,255,255,0.75);
+  border-left: 2px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.75);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
@@ -413,10 +414,10 @@ html:not([data-scroll='0']) .nav-links {
   position: absolute;
   top: 0;
   left: 0;
-  content: '';
+  content: "";
   width: 44px;
   height: 44px;
-  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
   border-radius: 100%;
   opacity: 0;
   -webkit-animation: sdb03 3s infinite;
@@ -425,7 +426,7 @@ html:not([data-scroll='0']) .nav-links {
 }
 
 #intro a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @-webkit-keyframes sdb03 {
@@ -433,10 +434,10 @@ html:not([data-scroll='0']) .nav-links {
     opacity: 0;
   }
   30% {
-    opacity: .6;
+    opacity: 0.6;
   }
   60% {
-    box-shadow: 0 0 0 40px rgba(255,255,255,.1);
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.1);
     opacity: 0;
   }
   100% {
@@ -448,10 +449,10 @@ html:not([data-scroll='0']) .nav-links {
     opacity: 0;
   }
   30% {
-    opacity: .6;
+    opacity: 0.6;
   }
   60% {
-    box-shadow: 0 0 0 40px rgba(255,255,255,.1);
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.1);
     opacity: 0;
   }
   100% {
@@ -464,11 +465,11 @@ html:not([data-scroll='0']) .nav-links {
 .blank-nav-space {
   height: 4.5rem;
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 #about {
-  background-color: #FFF;
+  background-color: #fff;
   height: 100vh;
 }
 
@@ -481,7 +482,7 @@ html:not([data-scroll='0']) .nav-links {
 
 .about-me-box {
   font-size: 1rem;
-  color: #FFF;
+  color: #fff;
   padding: 1em 2em 1em 2em;
   display: inline-block;
   text-align: center;
@@ -491,8 +492,8 @@ html:not([data-scroll='0']) .nav-links {
   z-index: 2;
 }
 
-.about-me-box h1 {
-  color: #FFF;
+.about-me-box .section-heading {
+  color: #fff;
 }
 
 .about-me-box-info {
@@ -524,23 +525,23 @@ html:not([data-scroll='0']) .nav-links {
   z-index: 3;
 }
 
-@media (min-width: 480px) {  
+@media (min-width: 480px) {
   .about-me-box {
     width: 75%;
     padding: 5% 5% 5% 10%;
-    background-color: #FFF;
+    background-color: #fff;
     color: #333333;
     opacity: 0;
   }
 
-  html:not([data-scroll='0']) .about-me-box {
-    transition: opacity 2s .5s;
+  html:not([data-scroll="0"]) .about-me-box {
+    transition: opacity 2s 0.5s;
     opacity: 1;
   }
 
-  .about-me-box h1 {
+  .about-me-box .section-heading {
     color: #333333;
-  }  
+  }
 
   .about-img {
     filter: none;
@@ -548,7 +549,7 @@ html:not([data-scroll='0']) .nav-links {
     transform: translateY(100%);
   }
 
-  html:not([data-scroll='0']) .about-img {
+  html:not([data-scroll="0"]) .about-img {
     transition: transform 1s 0s;
     transform: translateY(0%);
   }
@@ -582,8 +583,8 @@ html:not([data-scroll='0']) .nav-links {
 }
 
 #projects-title {
-  color: #FFF;
-  background-color: rgb(25,25,25);
+  color: #fff;
+  background-color: rgb(25, 25, 25);
   width: 100%;
   padding: 15% 0 5% 0;
   margin: 0;
@@ -605,7 +606,7 @@ html:not([data-scroll='0']) .nav-links {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  background: rgba(0,0,0,.75);
+  background: rgba(0, 0, 0, 0.75);
   color: white;
   width: 100%;
   height: 100%;
@@ -621,7 +622,7 @@ html:not([data-scroll='0']) .nav-links {
 }
 
 .proj-desc-info p {
-   padding: 1.5em 0 1.5em 0;
+  padding: 1.5em 0 1.5em 0;
 }
 
 .proj-item:hover .proj-desc {
@@ -644,13 +645,13 @@ html:not([data-scroll='0']) .nav-links {
 }
 
 .grid::after {
-  content: '';
+  content: "";
   flex-grow: 999999999;
 }
 
 .grid > figure {
   margin: 5px 0 5px 0;
-  background-color: #FFF;
+  background-color: #fff;
   position: relative;
 }
 
@@ -676,11 +677,11 @@ html:not([data-scroll='0']) .nav-links {
   }
 
   .proj-item-button {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .proj-desc-info p {
-     padding: 2em 0 2em 0;
+    padding: 2em 0 2em 0;
   }
 
   .grid > figure {
@@ -719,7 +720,7 @@ html:not([data-scroll='0']) .nav-links {
 }
 
 .contact-line hr {
-  border: 1px solid #BE423F;
+  border: 1px solid #be423f;
 }
 
 .contact-links {
@@ -733,7 +734,7 @@ html:not([data-scroll='0']) .nav-links {
 }
 
 #contact a {
-  font-family: 'Lexend Giga', sans-serif;
+  font-family: "Lexend Giga", sans-serif;
   color: #666666;
 }
 
@@ -770,7 +771,7 @@ html:not([data-scroll='0']) .nav-links {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   100% {
     opacity: 1;
@@ -781,14 +782,13 @@ html:not([data-scroll='0']) .nav-links {
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   100% {
     opacity: 1;
     transform: none;
   }
 }
-
 
 @keyframes slide-left {
   0% {
