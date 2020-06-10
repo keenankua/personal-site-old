@@ -643,12 +643,16 @@ html:not([data-scroll="0"]) .nav-links {
   width: 100%;
 }
 
+.kads-img {
+  background: url(../images/kads/kads-screenshot.jpg);
+}
+
 .cher-img {
-  background: url(../images/CHER/CHER-screenshot.png);
+  background: url(../images/CHER/CHER-screenshot.jpg);
 }
 
 .focals-img {
-  background: url(../images/Focals/Focals-screenshot.png);
+  background: url(../images/Focals/Focals-screenshot.jpg);
 }
 
 .guardian-img {
