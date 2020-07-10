@@ -643,6 +643,10 @@ html:not([data-scroll="0"]) .nav-links {
   width: 100%;
 }
 
+.everyday-img {
+  background: url(../images/everyday/everyday-screenshot.jpg);
+}
+
 .kads-img {
   background: url(../images/kads/kads-screenshot.jpg);
 }
